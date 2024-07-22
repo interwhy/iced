@@ -433,7 +433,7 @@ fn prepare(
     device: &wgpu::Device,
     queue: &wgpu::Queue,
     viewport: &glyphon::Viewport,
-    encoder: &mut wgpu::CommandEncoder,
+    _encoder: &mut wgpu::CommandEncoder,
     renderer: &mut glyphon::TextRenderer,
     atlas: &mut glyphon::TextAtlas,
     buffer_cache: &mut BufferCache,
@@ -639,7 +639,6 @@ fn prepare(
     renderer.prepare(
         device,
         queue,
-        encoder,
         font_system,
         atlas,
         viewport,

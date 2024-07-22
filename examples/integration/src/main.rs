@@ -102,6 +102,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                                     required_features: adapter_features
                                         & wgpu::Features::default(),
                                     required_limits: wgpu::Limits::default(),
+                                    memory_hints: wgpu::MemoryHints::default(),
                                 },
                                 None,
                             )
